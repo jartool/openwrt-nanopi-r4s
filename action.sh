@@ -44,7 +44,7 @@ function build() {
 		git pull
 		popd
 	else
-		git clone -b nanopi-r4s https://github.com/1715173329/openwrt-official.git ./openwrt
+		git clone -b master https://github.com/openwrt/openwrt.git ./openwrt
 		[ -f ./feeds.conf.default ] && cat ./feeds.conf.default >>./openwrt/feeds.conf.default
 	fi
 	pushd openwrt
