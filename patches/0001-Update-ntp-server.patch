@@ -1,17 +1,17 @@
-From 4ab7b0678ff7fc804c9eb080473814d58bde29a6 Mon Sep 17 00:00:00 2001
-From: buxiaomo <95112082@qq.com>
-Date: Mon, 3 Aug 2020 19:41:57 +0800
-Subject: [PATCH 1/8] update ntp server
+From 682bd0c8e905e06da5600b6d1b2b70f099136dc2 Mon Sep 17 00:00:00 2001
+From: GitHub Action <action@github.com>
+Date: Fri, 4 Mar 2022 12:11:36 +0800
+Subject: [PATCH 1/6] update ntp server
 
 ---
  package/base-files/files/bin/config_generate | 8 ++++----
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/package/base-files/files/bin/config_generate b/package/base-files/files/bin/config_generate
-index eb6816e519..fa3f572c8f 100755
+index 596fcf41fa..2778adec70 100755
 --- a/package/base-files/files/bin/config_generate
 +++ b/package/base-files/files/bin/config_generate
-@@ -251,10 +251,10 @@ generate_static_system() {
+@@ -311,10 +311,10 @@ generate_static_system() {
  		set system.ntp='timeserver'
  		set system.ntp.enabled='1'
  		set system.ntp.enable_server='0'
@@ -27,5 +27,5 @@ index eb6816e519..fa3f572c8f 100755
  
  	if json_is_a system object; then
 -- 
-2.27.0
+2.25.1
 

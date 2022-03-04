@@ -1,23 +1,23 @@
-From 5e5709ed0f889e7bb6ce141fb095b05eaa907d37 Mon Sep 17 00:00:00 2001
-From: buxiaomo <95112082@qq.com>
-Date: Mon, 3 Aug 2020 19:46:18 +0800
-Subject: [PATCH 3/8] Modify LAN IP
+From 9154bef48719370622d9c274344fe5a61f14e95c Mon Sep 17 00:00:00 2001
+From: GitHub Action <action@github.com>
+Date: Fri, 4 Mar 2022 12:14:20 +0800
+Subject: [PATCH 3/6] modify lan ip
 
 ---
  package/base-files/files/bin/config_generate | 6 +++---
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/package/base-files/files/bin/config_generate b/package/base-files/files/bin/config_generate
-index 4ee4f6fdb3..3dd9ed12f5 100755
+index aad9972f96..8c9ee5ddbb 100755
 --- a/package/base-files/files/bin/config_generate
 +++ b/package/base-files/files/bin/config_generate
-@@ -100,11 +100,11 @@ generate_network() {
+@@ -161,11 +161,11 @@ generate_network() {
  		static)
  			local ipad
  			case "$1" in
 -				lan) ipad=${ipaddr:-"192.168.1.1"} ;;
 -				*) ipad=${ipaddr:-"192.168.$((addr_offset++)).1"} ;;
-+				lan) ipad=${ipaddr:-"172.16.1.1"} ;;
++				lan) ipad=${ipaddr:-"172.16.0.0"} ;;
 +				*) ipad=${ipaddr:-"172.16.$((addr_offset++)).1"} ;;
  			esac
  
@@ -27,5 +27,5 @@ index 4ee4f6fdb3..3dd9ed12f5 100755
  			uci -q batch <<-EOF
  				set network.$1.proto='static'
 -- 
-2.27.0
+2.25.1
 

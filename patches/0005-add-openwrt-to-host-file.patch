@@ -1,7 +1,7 @@
-From ef3f4be174d893eecc95ca070882a5bf2c1520e4 Mon Sep 17 00:00:00 2001
-From: buxiaomo <95112082@qq.com>
-Date: Mon, 3 Aug 2020 22:54:17 +0800
-Subject: [PATCH 5/8] add openwrt to host file
+From 4dfb23ae5e0f5b97c5ee5d52d4a3e06a4c453a56 Mon Sep 17 00:00:00 2001
+From: GitHub Action <action@github.com>
+Date: Fri, 4 Mar 2022 12:15:24 +0800
+Subject: [PATCH 5/6] add openwrt to host file
 
 ---
  package/base-files/files/etc/hosts | 1 +
@@ -18,5 +18,5 @@ index b7713ebcc6..f1c310d977 100644
  ::1     localhost ip6-localhost ip6-loopback
  ff02::1 ip6-allnodes
 -- 
-2.27.0
+2.25.1
 
