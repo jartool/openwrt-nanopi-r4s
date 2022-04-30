@@ -45,7 +45,7 @@ function build() {
 		git pull
 		popd
 	else
-		git clone -b openwrt-21.02 https://github.com/openwrt/openwrt.git ./openwrt
+		git clone -b openwrt-22.03 https://github.com/openwrt/openwrt.git ./openwrt
 		[ -f ./feeds.conf.default ] && cat ./feeds.conf.default >>./openwrt/feeds.conf.default
 	fi
 	pushd openwrt
