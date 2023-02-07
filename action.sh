@@ -46,11 +46,11 @@ function build() {
 		popd
 	else
 		git clone -b openwrt-22.03 https://github.com/openwrt/openwrt.git ./openwrt
-		[ -f ./feeds.conf.default ] && cat ./feeds.conf.default >>./openwrt/feeds.conf.default
+		[ -f ./feeds.conf.default ] && cat ./feeds.conf.default >> ./openwrt/feeds.conf.default
 	fi
 	pushd openwrt
 
-	[ -d ./package/v2raya ] && rm -rf /package/v2raya
+	[ -d ./package/v2raya ] && rm -rf ./package/v2raya
 	git clone https://github.com/v2rayA/v2raya-openwrt.git ./package/v2raya
 	
 	[ -d ./package/chinadns-ng ] && rm -rf ./package/chinadns-ng
