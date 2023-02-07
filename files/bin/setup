@@ -77,6 +77,7 @@ auth-nocache
 remote-cert-tls server
 route-nopull
 route ${LAN_IPADDR} ${LAN_NETMASK} vpn_gateway
+dhcp-option DNS $(uci get network.lan.ipaddr)
 <tls-crypt>
 ${TC_KEY}
 </tls-crypt>
@@ -108,7 +109,7 @@ keepalive 10 120
 persist-tun
 persist-key
 duplicate-cn
-push "dhcp-option DNS ${LAN_IPADDR}"
+push "dhcp-option DNS $(uci get network.lan.ipaddr)"
 push "redirect-gateway def1"
 push "persist-tun"
 push "persist-key"
