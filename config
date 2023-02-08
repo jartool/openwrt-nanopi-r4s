@@ -69,5 +69,3 @@ CONFIG_PACKAGE_kmod-usb-ohci=y
 CONFIG_PACKAGE_kmod-usb2=y
 CONFIG_PACKAGE_kmod-usb-hid=y
 CONFIG_PACKAGE_kmod-lp=y
-CONFIG_PACKAGE_v2ray-core=y
-
